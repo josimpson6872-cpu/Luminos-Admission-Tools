@@ -210,266 +210,408 @@ header{background:var(--navy);position:sticky;top:0;z-index:200;box-shadow:0 4px
 ══════════════════════════════════════════════════════════════════ -->
 <div class="panel active" id="panel-walkthrough">
 <div class="container">
-<div class="intro-strip"><strong>Follow each section in the exact order you see it in Firenote.</strong> Expand any section to read the guidance. Use this during admissions and orientation.</div>
+<div class="intro-strip"><strong>Follow each section in the exact order you see it in Firenote.</strong> Expand any section to read the guidance. Every field, branching option, and clinical rule is documented exactly as it appears in the assessment.</div>
 
-<!-- Step 1 -->
 <div class="card open" id="w1">
   <div class="card-hdr" onclick="toggleCard('w1')">
     <div class="card-num">1</div>
     <div class="card-bar"><h2>Visit Details</h2><div class="sub">First section in Firenote</div><span class="chevron">▼</span></div>
   </div>
   <div class="card-body"><div class="card-inner">
-    <div class="sub-gold">What to Enter</div>
-    <div class="chk-item"><div class="chk-text">Date and time of admission visit start</div></div>
-    <div class="chk-item"><div class="chk-text">Mileage to patient location</div></div>
-    <div class="chk-item"><div class="chk-text">Travel time</div></div>
-    <div class="chk-item"><div class="chk-text">Mark "On Call" if completed during on-call hours</div></div>
-    <div class="alert info" style="margin-top:10px"><span>ℹ</span><div>Complete Visit Details before any clinical documentation. Mileage and travel time are required for billing accuracy.</div></div>
+
+<div class="sub-gold">What to Enter</div>
+<ul class="blist"><li>Date and time that the admission visit starts</li><li>Mileage to the patient's location</li><li>Travel time</li><li>If the admission is during an on-call shift, mark "On Call"</li></ul>
+<div class="alert info"><span>ℹ</span><div>Complete Visit Details before documenting any clinical content. Mileage and travel time are required for billing accuracy.</div></div>
+
   </div></div>
 </div>
-
-<!-- Step 2 -->
 <div class="card" id="w2">
   <div class="card-hdr" onclick="toggleCard('w2')">
     <div class="card-num">2</div>
     <div class="card-bar"><h2>Vitals</h2><div class="sub">Required at admission and every visit</div><span class="chevron">▼</span></div>
   </div>
   <div class="card-body"><div class="card-inner">
-    <p style="font-size:.88rem;color:var(--text-mid);margin-bottom:10px">Required at admission and every visit unless there is a documented clinical reason they could not be obtained.</p>
-    <table class="dtable">
-      <thead><tr><th>Vital Sign</th><th>Notes</th></tr></thead>
-      <tbody>
-        <tr><td>Weight</td><td>Obtain yourself whenever possible. If patient-reported, document as "patient-reported." Document reason if unable to obtain.</td></tr>
-        <tr><td>Height</td><td>Admission only</td></tr>
-        <tr><td>MAC (Mid-Arm Circumference)</td><td>Required at admission and monthly — even if the patient can still weigh on a scale. Provides a baseline for tracking decline.</td></tr>
-        <tr><td>Heart Rate</td><td></td></tr>
-        <tr><td>Blood Pressure</td><td></td></tr>
-        <tr><td>Respiratory Rate</td><td></td></tr>
-        <tr><td>Oxygen Saturation</td><td>If patient is on oxygen, document liter flow in the nursing note summary section</td></tr>
-        <tr><td>Temperature</td><td></td></tr>
-      </tbody>
-    </table>
+
+<p style="font-size:.88rem;color:var(--text-mid);margin-bottom:10px">Vital signs must be completed on admission, and on every visit afterwards unless documentation clearly states why they were not, or could not be completed due to patient condition.</p>
+<table class="dtable"><thead><tr><th>Vital Sign</th><th>Requirements & Notes</th></tr></thead><tbody><tr><td><strong>Weight</strong></td><td>Document the patient's current weight, obtained by you during the admission whenever possible. If unable to obtain, a reported weight is acceptable — documentation should indicate it is a reported weight.</td></tr><tr><td><strong>Height</strong></td><td>Obtain at admission.</td></tr><tr><td><strong>MAC (Mid-Arm Circumference)</strong></td><td>Obtain on <strong>ALL</strong> patients at admission. Continue to assess and document at least monthly throughout their care, even if the patient is still able to weigh on a scale.<br><br>This provides a baseline MAC to refer to when/if the patient becomes unable to physically weigh on a scale any longer.</td></tr><tr><td><strong>Heart Rate</strong></td><td></td></tr><tr><td><strong>Blood Pressure</strong></td><td></td></tr><tr><td><strong>Respiratory Rate</strong></td><td></td></tr><tr><td><strong>Oxygen Saturation</strong></td><td>If patient is on oxygen, ensure that the liter flow of the oxygen is documented in the summary section of the nursing note.</td></tr><tr><td><strong>Temperature</strong></td><td></td></tr></tbody></table>
+
   </div></div>
 </div>
-
-<!-- Step 3 -->
 <div class="card" id="w3">
   <div class="card-hdr" onclick="toggleCard('w3')">
     <div class="card-num">3</div>
-    <div class="card-bar"><h2>Symptoms</h2><div class="sub">HOPE Symptom Impact — last 2 days only</div><span class="chevron">▼</span></div>
+    <div class="card-bar"><h2>Symptoms</h2><div class="sub">HOPE Symptom Impact Screening — past 2 days only</div><span class="chevron">▼</span></div>
   </div>
   <div class="card-body"><div class="card-inner">
-    <div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">This section reflects impact over the LAST 2 DAYS — NOT current severity at the moment of the visit. This is one of the most common documentation errors.</div></div>
-    <div class="sub-gold">Impact Levels</div>
-    <table class="dtable">
-      <thead><tr><th>Level</th><th>Meaning</th></tr></thead>
-      <tbody>
-        <tr><td>N/A</td><td>Not applicable — symptom does not apply to this patient</td></tr>
-        <tr><td>Not at all</td><td>Symptom has no impact on daily life</td></tr>
-        <tr><td>Slight</td><td>Minor impact on daily life</td></tr>
-        <tr><td>Moderate</td><td>Noticeable impact on daily life</td></tr>
-        <tr><td>Severe</td><td>Major impact on daily life</td></tr>
-      </tbody>
-    </table>
-    <div class="sub-gold" style="margin-top:12px">Assess Each Symptom</div>
-    <div class="two-col">
-      <div class="col">
-        <div class="chk-item"><div class="chk-text">Pain</div></div>
-        <div class="chk-item"><div class="chk-text">Shortness of Breath</div></div>
-        <div class="chk-item"><div class="chk-text">Anxiety</div></div>
-        <div class="chk-item"><div class="chk-text">Nausea</div></div>
-      </div>
-      <div class="col">
-        <div class="chk-item"><div class="chk-text">Vomiting</div></div>
-        <div class="chk-item"><div class="chk-text">Diarrhea</div></div>
-        <div class="chk-item"><div class="chk-text">Constipation</div></div>
-        <div class="chk-item"><div class="chk-text">Agitation</div></div>
-      </div>
-    </div>
-    <div class="alert warning"><span>⚠</span><div><strong>Moderate or Severe</strong> on ANY symptom requires a Symptom Follow-Up Visit within 48 hours. The system will prompt you to schedule this before moving on.</div></div>
+
+<div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">This section assesses how the patient has been affected by each symptom over the prior 2 days — NOT the current intensity or severity of the symptom at this moment. This is one of the most common documentation errors.</div></div>
+<p style="font-size:.88rem;color:var(--text-mid);margin-bottom:8px">The admission nurse will use clinical judgement, assessment, and patient/caregiver interviews to evaluate each of the following symptoms:</p>
+<table class="dtable"><thead><tr><th>Impact Level</th><th>Definition</th></tr></thead><tbody><tr><td><strong>N/A</strong></td><td>Not applicable — the symptom does not apply to the patient</td></tr><tr><td><strong>Not at all</strong></td><td>The symptom has no impact on the patient's daily life</td></tr><tr><td><strong>Slight</strong></td><td>The symptom has a minor impact on daily life</td></tr><tr><td><strong>Moderate</strong></td><td>The symptom has a noticeable impact on daily life</td></tr><tr><td><strong>Severe</strong></td><td>The symptom has a major impact on their daily life</td></tr></tbody></table>
+<div class="sub-gold" style="margin-top:12px">Symptoms to Assess</div>
+<div class="two-col">
+  <div class="col">
+    <div class="chk-item"><div class="chk-text">Pain</div></div>
+    <div class="chk-item"><div class="chk-text">Shortness of Breath</div></div>
+    <div class="chk-item"><div class="chk-text">Anxiety</div></div>
+    <div class="chk-item"><div class="chk-text">Nausea</div></div>
+  </div>
+  <div class="col">
+    <div class="chk-item"><div class="chk-text">Vomiting</div></div>
+    <div class="chk-item"><div class="chk-text">Diarrhea</div></div>
+    <div class="chk-item"><div class="chk-text">Constipation</div></div>
+    <div class="chk-item"><div class="chk-text">Agitation</div></div>
+  </div>
+</div>
+<div class="alert warning"><span>⚠</span><div><strong>Any rating of Moderate or Severe</strong> will trigger a required Symptom Follow-Up Visit to be completed within 48 hours. The system will prompt you to schedule this before moving on.</div></div>
+
   </div></div>
 </div>
-
-<!-- Step 4 -->
 <div class="card" id="w4">
   <div class="card-hdr" onclick="toggleCard('w4')">
     <div class="card-num">4</div>
     <div class="card-bar"><h2>Observations</h2><div class="sub">Comprehensive assessment — complete in Firenote order</div><span class="chevron">▼</span></div>
   </div>
   <div class="card-body"><div class="card-inner">
-    <p style="font-size:.88rem;color:var(--text-mid);margin-bottom:10px">Complete each subsection in order. <span style="color:var(--red);font-weight:700">★</span> = required on all patients. Complete all applicable disease-specific LCDs.</p>
-    <div class="obs-row tip"><div>› Initial Assessment <span class="req">★</span><div class="obs-tip">Select "Assessment Performed." If unable, document reason and plan to reassess at next visit.</div></div></div>
-    <div class="obs-row tip" style="margin-top:3px"><div>› LCD — General <span class="req">★</span><div class="obs-tip">Required ALL patients. Progressive worsening, increasing analgesic needs, decreasing albumin, recurrent infections, dysphagia, hospitalizations.</div></div></div>
-    <div class="obs-row tip" style="margin-top:3px"><div>› LCD — Decline <span class="req">★</span><div class="obs-tip">Required ALL patients. PPS score, caregiver dependence (bathing, feeding, dressing, toileting, ambulation, transfers).</div></div></div>
-    <div class="sub-gold" style="margin-top:12px">Pain <span style="color:var(--red)">★</span> — 7 Components (at least 5 required)</div>
-    <table class="dtable">
-      <thead><tr><th>Component</th><th>What to Assess</th></tr></thead>
-      <tbody>
-        <tr><td>Location</td><td>All sites; localized or diffuse</td></tr>
-        <tr><td>Severity</td><td>0–10 scale; FLACC or PAINAD for non-verbal (document tool name + score)</td></tr>
-        <tr><td>Character</td><td>Aching, burning, stabbing, throbbing — patient's own words</td></tr>
-        <tr><td>Duration</td><td>Constant vs. intermittent; onset date or timeframe</td></tr>
-        <tr><td>Frequency</td><td>How often; pattern over the day</td></tr>
-        <tr><td>Relieves / Worsens</td><td>Position, activity, medications, heat/cold</td></tr>
-        <tr><td>Effect on Function / QOL</td><td>Mobility, sleep, appetite, mood, ADLs, social interaction</td></tr>
-      </tbody>
-    </table>
-    <div class="alert info"><span>ℹ</span><div><strong>Non-verbal patients:</strong> Do NOT leave assessment blank. Document clinical observation, caregiver input, behavioral cues, and the tool used.</div></div>
-    <div class="sub-gold" style="margin-top:12px">Disease-Specific LCDs — Complete All That Apply</div>
-    <table class="dtable">
-      <thead><tr><th>LCD</th><th>Key Points</th></tr></thead>
-      <tbody>
-        <tr><td>Alzheimer's / Dementia</td><td>FAST scale = Alzheimer's ONLY. Document inability to dress/bathe, incontinence, loss of communication.</td></tr>
-        <tr><td>ALS</td><td>Bulbar/respiratory progression, dysphagia, PPS decline</td></tr>
-        <tr><td>Heart Disease</td><td>EF &lt; 20% or NYHA IV symptoms at rest. Recurrent CHF hospitalizations.</td></tr>
-        <tr><td>Cancer</td><td>Disease status, PPS ≤ 70%, significant weight loss</td></tr>
-        <tr><td>HIV</td><td>CD4 &lt; 25, viral load &gt; 100,000, opportunistic infections</td></tr>
-        <tr><td>Liver Disease</td><td>MELD ≥ 17 + ascites, encephalopathy, hepatorenal syndrome, or SBP</td></tr>
-        <tr><td>Pulmonary Disease</td><td>FEV1 &lt; 30%, O2 dependence at rest, dyspnea at rest</td></tr>
-        <tr><td>Renal Disease</td><td>GFR &lt; 10, elected not to pursue dialysis</td></tr>
-        <tr><td>Stroke</td><td>PPS &lt; 40%, dysphagia preventing adequate intake, no artificial nutrition elected</td></tr>
-        <tr><td>Coma</td><td>Any etiology, unresponsive, no improvement by day 3</td></tr>
-      </tbody>
-    </table>
-    <div class="sub-gold" style="margin-top:12px">Body System Subsections — Complete in Order</div>
-    <table class="dtable">
-      <thead><tr><th>Section</th><th>Key Reminders</th></tr></thead>
-      <tbody>
-        <tr><td>Comprehensive Assessment ★</td><td>Selections trigger mandatory sections and must appear in care plan</td></tr>
-        <tr><td>Signs of Decline</td><td>Objective data auto-populates over time — not expected at admission</td></tr>
-        <tr><td>General ★</td><td>ECOG and PPS required. Complete columns left to right.</td></tr>
-        <tr><td>Eyes/Ears/Nose/Mouth ★</td><td>Answer only what applies — leave blank if doesn't apply</td></tr>
-        <tr><td>Skin ★</td><td>⚠ Bowel-only incontinence has no field — document in narrative instead</td></tr>
-        <tr><td>Wound Assessment ★</td><td>Each wound: separate ICD-10 + own goal + own interventions + QAPI event</td></tr>
-        <tr><td>Cardiac ★</td><td>NYHA scale for CHF only. Add device Z codes (pacemaker Z95.0, AICD Z95.810)</td></tr>
-        <tr><td>Respiratory ★</td><td>Terminal secretions, breath sounds, dyspnea, O2 saturation + flow rate</td></tr>
-        <tr><td>GI / Abdomen ★</td><td>Last BM date + normal routine. Constipation + opioids = K59.00 required.</td></tr>
-        <tr><td>Nutrition ★</td><td>⚠ Document DECLINE ONLY — leave "No decrease" and "No weight loss" BLANK</td></tr>
-        <tr><td>GU / GYN ★</td><td>Catheter = Z96.0 required. Active UTI = QAPI event required.</td></tr>
-        <tr><td>Extremities ★</td><td>Edema location + severity, peripheral pulses, skin changes</td></tr>
-        <tr><td>Musculoskeletal ★</td><td>Weakness, contractures, range of motion limitations</td></tr>
-        <tr><td>Neuro ★</td><td>FAST scale = Alzheimer's ONLY. Document orientation, strength, tremor, seizure history.</td></tr>
-        <tr><td>Psych/Social ★</td><td>Required ALL admissions — mark Yes. Social isolation, depression indicators, coping.</td></tr>
-        <tr><td>Suicide Risk ★</td><td>Required ALL admissions. If risk identified → active care plan problem required.</td></tr>
-        <tr><td>Spiritual ★</td><td>Required ALL admissions — mark Yes. Cannot defer to Chaplain as reason for not completing.</td></tr>
-        <tr><td>Patient Safety ★</td><td>Abuse screening. Any concerns must be documented, reported if required, and care planned.</td></tr>
-        <tr><td>Fall Risk ★</td><td>Z91.81 (history) · R26.89 (gait) · Z91.89 (risk factors). Must be care planned if identified.</td></tr>
-        <tr><td>Caregivers ★</td><td>Facility staff ≠ caregiver. Medication responsibility documented here.</td></tr>
-        <tr><td>Explanation of Service ★</td><td">"It was me" opens required education section. Do not select another discipline unless confirmed.</td></tr>
-        <tr><td>Bereavement Assessment ★</td><td>Required ALL admissions. Risk level must match score in Comprehensive Assessment.</td></tr>
-        <tr><td>QAPI Events</td><td>Falls · Infections · Wounds · Hospitalizations — each opens its own reporting tool</td></tr>
-      </tbody>
-    </table>
-  </div></div>
+
+<p style="font-size:.88rem;color:var(--text-mid);margin-bottom:10px">This is your comprehensive assessment section. Work through each subsection in the exact order it appears in Firenote. Sections marked <span style="color:var(--red);font-weight:700">★</span> are required on all patients. Complete all applicable disease-specific LCDs — not just the primary diagnosis.</p>
+
+<div class="obs-row tip"><div>› LCD: General <span class="req">★</span><div class="obs-tip">Complete on ALL patients. Select all items that apply to this patient. These are general indicators of disease progression and quantifiable markers.</div></div></div>
+<div style="margin-bottom:4px"></div>
+<div class="obs-row tip"><div>› LCD: Decline <span class="req">★</span><div class="obs-tip">Complete on ALL patients. Select all items that apply to this patient. These are general indicators of decline typically seen in terminal patients.</div></div></div>
+<div style="margin-bottom:4px"></div>
+
+<div class="obs-row" style="margin-bottom:3px"><div><strong>› Pain ★</strong></div></div>
+
+<div class="sub-gold" style="margin-top:10px">Every Patient Requires a Pain Assessment</div>
+<p style="font-size:.88rem;color:var(--text-mid);margin-bottom:8px">Use the following rules to determine how to document pain for each patient:</p>
+<ul class="blist"><li><strong>If pain is identified as a present issue</strong> — even if the patient's pain is currently well-managed with medications — pain MUST be included on the plan of care and a comprehensive pain assessment must be completed.</li><li><strong>Pain intensity level can be zero (0)</strong> if at the time of assessment their pain is well palliated. The nurse should assess the characteristics of the pain when the patient is experiencing it and document accordingly.</li><li><strong>If the patient truly has no issue with pain and is not taking any pain medications</strong>, then pain can be marked as not a problem.</li></ul>
+
+<div class="sub-gold" style="margin-top:12px">Comprehensive Pain Assessment</div>
+<p style="font-size:.87rem;color:var(--text-mid);margin-bottom:8px">If a patient is identified as having pain, a Comprehensive Pain Assessment is required. At least <strong>5 of the 7</strong> indicators must be assessed for it to count as a comprehensive pain assessment:</p>
+<table class="dtable"><thead><tr><th>Component</th><th>What to Assess</th></tr></thead><tbody><tr><td><strong>Location</strong></td><td>Where is the pain? All sites; note if localized or diffuse.</td></tr><tr><td><strong>Severity</strong></td><td>0–10 numeric scale. For non-verbal patients: use FLACC or PAINAD — document the tool name and score.</td></tr><tr><td><strong>Character</strong></td><td>What does it feel like? Aching, burning, stabbing, throbbing, pressure — use the patient's own words.</td></tr><tr><td><strong>Duration</strong></td><td>Constant vs. intermittent; onset date or timeframe.</td></tr><tr><td><strong>Frequency</strong></td><td>How often does it occur? Pattern over the day.</td></tr><tr><td><strong>What Relieves / Worsens</strong></td><td>Position, activity, medications, heat/cold — what makes it better or worse?</td></tr><tr><td><strong>Effect on Function / QOL</strong></td><td>Impact on mobility, sleep, appetite, mood, ADLs, social interaction.</td></tr></tbody></table>
+<div class="alert info"><span>📝</span><div><strong>Pain Intensity Goal:</strong> Document what the patient identifies as an acceptable pain intensity level.<br><strong>Pain Intensity Warranting Further Action:</strong> Document at what point the patient wants to pursue additional measures for more aggressive pain control (e.g., increased medication dosing that may cause side effects such as increased somnolence).</div></div>
+<div class="alert info"><span>ℹ</span><div><strong>Non-verbal/unresponsive patients:</strong> A patient does NOT need to be verbally responsive for a pain assessment to be documented. Document clinical observation, caregiver input, behavioral cues, and the validated tool used. Leaving the assessment blank because the patient could not respond is not acceptable.</div></div>
+
+<div style="margin-top:8px"></div>
+<div class="obs-row tip"><div>› Infection Control <span class="req">★</span><div class="obs-tip">All patients should be screened for potential and/or active infections. Documentation is required on precautions and education for infection control.</div></div></div>
+<ul class="blist"><li>Any concerns for transmissible infections identified should be reported in documentation and to the local Clinical Director.</li><li>Any identified infections require a QAPI event to be documented for appropriate tracking and monitoring.</li></ul>
+
+<div class="sub-gold" style="margin-top:12px">Disease-Specific LCDs — Complete All That Apply</div>
+<p style="font-size:.87rem;color:var(--text-mid);margin-bottom:8px">Complete the appropriate disease-specific LCD section for each condition the patient has — NOT just their primary diagnosis. For instance, if your patient is on hospice for CHF and they also have renal disease and pulmonary disease, complete the LCD sections for Cardiac, Pulmonary, AND Renal.</p>
+<table class="dtable"><thead><tr><th>LCD Section</th><th>Key Documentation Points</th></tr></thead><tbody><tr><td><strong>Alzheimer's / Dementia</strong></td><td>The FAST scale should ONLY be used for patients with a known Alzheimer's diagnosis. Other forms of dementia should not be measured with this scale.</td></tr><tr><td><strong>ALS</strong></td><td>Document objective progression (respiratory decline, dysphagia, PPS changes). Avoid vague statements like "declining" — include measurable changes.</td></tr><tr><td><strong>Heart Disease</strong></td><td>Must document NYHA Class IV symptoms or EF &lt; 20% with supporting symptoms. Clearly indicate symptoms at rest and lack of response to treatment.</td></tr><tr><td><strong>Cancer</strong></td><td>Specify disease status (metastatic, locally advanced, progressive). Include PPS score and evidence of decline (weight loss, decreased intake, treatment tolerance).</td></tr><tr><td><strong>HIV</strong></td><td>Include most recent CD4 count and viral load if available. Also document opportunistic infections and functional decline.</td></tr><tr><td><strong>Liver Disease</strong></td><td>Include MELD score if available. Must document at least one major complication (ascites, encephalopathy, hepatorenal syndrome, SBP).</td></tr><tr><td><strong>Pulmonary Disease</strong></td><td>Document objective measures (FEV1 if available, O2 dependence). Must include dyspnea at rest and declining functional status.</td></tr><tr><td><strong>Renal Disease</strong></td><td>Document GFR/creatinine values and clearly state that dialysis is not being pursued or has been discontinued.</td></tr><tr><td><strong>Stroke</strong></td><td>Use sequelae codes (I69.x) rather than acute CVA codes when appropriate. Document functional deficits, PPS, and impact on intake/swallowing.</td></tr><tr><td><strong>Coma</strong></td><td>Document cause (if known) and confirm lack of improvement. Include neurologic status and duration (≥ day 3 if applicable).</td></tr></tbody></table>
+<div class="alert info"><span>📝</span><div>If an LCD section does not apply to the patient, don't select it. Only complete what is relevant to the patient's actual diagnoses. These LCD criteria serve as clinical guidelines and should not be used as the sole determinant of hospice eligibility.</div></div>
+
+<div class="obs-row" style="margin-top:10px;margin-bottom:3px"><div><strong>› Comprehensive Assessment ★</strong></div></div>
+
+<div class="sub-navy" style="margin-top:8px">Primary Hospice Problem</div>
+<p style="font-size:.88rem;color:var(--text-mid);margin-bottom:8px">The Primary Hospice Problem should always be supported by both <strong>Objective Measures</strong> and <strong>Subjective complaints</strong>.</p>
+
+<div class="sub-navy">Significant Complications / Risk Factors Around Care Planning</div>
+<p style="font-size:.87rem;color:var(--text-mid);margin-bottom:7px">Selections here will cause associated assessment sections to become mandatory. Selections here also <strong>must</strong> be included in the patient's care plan with applicable goals and interventions to address them:</p>
+<div class="two-col" style="margin-bottom:10px">
+  <div class="col">
+    <div class="chk-item"><div class="chk-text">Pain</div></div>
+    <div class="chk-item"><div class="chk-text">Fall Issues</div></div>
+    <div class="chk-item"><div class="chk-text">Skin Integrity</div></div>
+    <div class="chk-item"><div class="chk-text">Wound</div></div>
+    <div class="chk-item"><div class="chk-text">Cardiac</div></div>
+    <div class="chk-item"><div class="chk-text">Constipation / Diarrhea</div></div>
+    <div class="chk-item"><div class="chk-text">Breathing Issues</div></div>
+  </div>
+  <div class="col">
+    <div class="chk-item"><div class="chk-text">Nausea</div></div>
+    <div class="chk-item"><div class="chk-text">Communication Concerns</div></div>
+    <div class="chk-item"><div class="chk-text">Psych Issues</div></div>
+    <div class="chk-item"><div class="chk-text">Anxiety</div></div>
+    <div class="chk-item"><div class="chk-text">Nutrition / Intake</div></div>
+    <div class="chk-item"><div class="chk-text">Living Environment</div></div>
+  </div>
 </div>
 
-<!-- Step 5 -->
+<div class="sub-navy">Patient's Ability to Understand / Participate in Care</div>
+<div class="alert info"><span>📝</span><div>This reflects the <strong>PATIENT's</strong> cognitive status — not others involved in their care. Answers should reflect the patient's ability to understand and engage, not the caregiver's.</div></div>
+<table class="dtable"><thead><tr><th>Level</th><th>Definition</th></tr></thead><tbody><tr><td><strong>No Engagement</strong></td><td>Patient is unable to participate meaningfully due to cognitive state. No understanding or interaction with care planning.</td></tr><tr><td><strong>Low Engagement</strong></td><td>Patient has limited understanding or inconsistent participation. May respond minimally or need frequent prompting or caregiver support.</td></tr><tr><td><strong>High Engagement</strong></td><td>Patient clearly understands their care and actively participates in discussions, decisions, and goal setting.</td></tr></tbody></table>
+
+<div class="sub-navy" style="margin-top:12px">Imminence of Death</div>
+<p style="font-size:.88rem;color:var(--text-mid);margin-bottom:10px">Document your clinical assessment of the patient's proximity to death based on your findings during this visit.</p>
+
+<div class="sub-navy">Severity of Symptoms</div>
+<table class="dtable"><thead><tr><th>Level</th><th>Definition</th></tr></thead><tbody><tr><td><strong>Worsening</strong></td><td>The symptom is getting worse (increasing impact) since the last assessment, based on patient or caregiver report and your clinical observation.</td></tr><tr><td><strong>Managed</strong></td><td>The symptom is stable and under control with the current plan; it is not getting worse.</td></tr><tr><td><strong>Palliated</strong></td><td>The symptom is improved or resolved; it is no longer a current issue (or is minimal).</td></tr></tbody></table>
+
+<div class="sub-navy" style="margin-top:12px">Drug Profile Review</div>
+<p style="font-size:.87rem;color:var(--text-mid);margin-bottom:6px">A comprehensive drug profile review is required on all new admissions, with medication changes, and with each recertification. This review requires the nurse to assess:</p>
+<ul class="blist"><li>Medication appropriateness</li><li>Potential drug-to-drug interactions</li><li>Potential drug allergies</li><li>The need for any laboratory monitoring (e.g., INR monitoring for patients on Coumadin)</li><li>Appropriate medications to consider for deprescribing that are no longer medically necessary</li></ul>
+<table class="dtable"><thead><tr><th>Review Item</th><th>What to Do</th></tr></thead><tbody><tr><td><strong>Care Plan Med Review</strong></td><td>Review the medications listed on the Care Plan and mark each one as Reviewed to document you've reviewed current meds during the visit.</td></tr><tr><td><strong>Med Interaction Review</strong></td><td>Check for potential interactions between the patient's medications. Once the medication list has been completed, potential drug-to-drug interactions and drug allergy items will populate in a red box above the med list. The admission nurse MUST notate each of these specifically, discuss them with the hospice physician, and document the discussion along with any outcome ordered by the MD.</td></tr><tr><td><strong>Duplicate Med Review</strong></td><td>Identify and remove duplicate medication entries (often patient-reported meds that duplicate covered or encounter-ordered meds) to avoid confusion.</td></tr></tbody></table>
+
+<div class="sub-navy" style="margin-top:12px">Bereavement Risk Evaluation for Family / Caregivers</div>
+<p style="font-size:.87rem;color:var(--text-mid);margin-bottom:6px">All patients must be assessed by the admission nurse for initial bereavement risk.</p>
+<div class="alert info"><span>📝</span><div>There is a section further on in the assessment that helps with calculating a risk score. Ensure that the answer marked here <strong>matches</strong> the answer in that section.</div></div>
+<table class="dtable"><thead><tr><th>Level</th><th>What It Means</th></tr></thead><tbody><tr><td><strong>Low Risk</strong></td><td>The family or caregiver is assessed as having minimal bereavement risk. Default "Risk Level Low" tasks are used for follow-up.</td></tr><tr><td><strong>Moderate Risk</strong></td><td>The family or caregiver is assessed as having a noticeable level of bereavement risk. Default "Risk Level Moderate" tasks are used for follow-up.</td></tr><tr><td><strong>High Risk</strong></td><td>The family or caregiver is assessed as having significant bereavement risk. Default "Risk Level High" tasks are used for follow-up.</td></tr></tbody></table>
+
+<div class="sub-navy" style="margin-top:12px">Need for Referrals or Further Evaluation</div>
+<p style="font-size:.87rem;color:var(--text-mid);margin-bottom:6px">Does the patient have a clinical need to be referred to another service or provider, or to have additional evaluation beyond what was done in this visit? This is a clinical judgment call.</p>
+<ul class="blist"><li>Use it to flag anything that needs another provider, another discipline, or additional evaluation beyond what you can complete in this encounter.</li><li>If you select that there is a need, document the specific reason in the free-text box so it is clear what triggered the referral or further evaluation.</li></ul>
+
+<div style="margin-top:10px"></div>
+<div class="obs-row"><div>› Signs of Decline</div></div>
+<table class="dtable"><thead><tr><th>Field</th><th>How It Works</th></tr></thead><tbody><tr><td><strong>Objective Measurements</strong></td><td>Will auto-populate once enough data is provided over a period of time. These will not apply during the admission — do not worry about this section being blank at admission.</td></tr><tr><td><strong>Signs of Decline: New Subjective Observations</strong></td><td>Use this section to mark any subjective signs of decline that were noted during this admission assessment.</td></tr><tr><td><strong>Signs of Decline: Observations Supporting Actively Dying</strong></td><td>Use this section to document any signs and/or symptoms the patient is exhibiting that indicate death is imminent. If death is expected within hours to days, notify the IDG immediately so they can expedite visits and increase support for the patient and family.</td></tr></tbody></table>
+
+<div style="margin-top:8px"></div>
+<div class="obs-row"><div>› General <span class="req">★</span></div></div>
+<div class="sub-navy" style="margin-top:8px">ECOG Performance Scale</div>
+<p style="font-size:.87rem;color:var(--text-mid);margin-bottom:6px">We use this in place of the KPS scale. All patients should have an ECOG score documented at admission and ongoing throughout their care.</p>
+<table class="dtable"><thead><tr><th>Grade</th><th>Description</th></tr></thead><tbody><tr><td><strong>Grade 0</strong></td><td>Fully active, no restrictions</td></tr><tr><td><strong>Grade 1</strong></td><td>Restricted in strenuous activity; can perform light work</td></tr><tr><td><strong>Grade 2</strong></td><td>Ambulatory and capable of all self-care; unable to perform work activities</td></tr><tr><td><strong>Grade 3</strong></td><td>Limited self-care; confined to bed or chair more than 50% of waking hours</td></tr><tr><td><strong>Grade 4</strong></td><td>Completely disabled; unable to perform self-care; totally confined to bed or chair</td></tr><tr><td><strong>Grade 5</strong></td><td>Dead</td></tr></tbody></table>
+<div class="sub-navy" style="margin-top:10px">Palliative Performance Scale (PPS)</div>
+<p style="font-size:.87rem;color:var(--text-mid);margin-bottom:6px">Every patient should have a PPS score documented at admission and ongoing throughout care. Reference the PPS scale instructions in your clinical manual for additional understanding. Complete the General section columns from left to right:</p>
+<ul class="blist"><li>Column 1: Mobility</li><li>Column 2: Neurological / Behavioral</li><li>Columns 3 &amp; 4: Appearance and Characteristics</li></ul>
+
+<div style="margin-top:8px"></div>
+<div class="obs-row tip"><div>› Eyes, Ears, Nose, Mouth <span class="req">★</span><div class="obs-tip">Answer based on what applies to the patient. If a selection does not apply, choose nothing.</div></div></div>
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Skin <span class="req">★</span></div></div>
+<p style="font-size:.87rem;color:var(--text-mid);margin:6px 0">Every patient requires a skin assessment at admission. Choose the items that apply to your patient. Wounds are identified in this section briefly and then followed up on more comprehensively in the Wound Assessment section.</p>
+<div class="alert warning"><span>⚠</span><div><strong>Missing incontinence option:</strong> The incontinence section is missing an option solely for bowel incontinence. If the patient is continent of urine but incontinent of bowel, please document this in the narrative section.<br><br><strong>Auto-generated narration:</strong> Answering the skin assessment questions will automatically generate a pressure injury risk determination and a probability of nutritional deficiency (if applicable). Ensure these items are included in the plan of care. If the admission nurse does not agree with the auto-generated narration, click "Lock &amp; Edit RapidChart Contents" to ensure clarity and accuracy.</div></div>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Wound Assessment <span class="req">★</span></div></div>
+<p style="font-size:.87rem;color:var(--text-mid);margin:6px 0">Click "+ Add New Wound Assessment" for each wound present. Complete the following for every wound:</p>
+<ul class="blist"><li><strong>Select Wound being assessed:</strong> Select the appropriate wound that was added to the diagnosis list. If the wound you are addressing is NOT in the dropdown, you must add it to the diagnosis list before you can proceed. Every wound MUST be coded out and have a care plan built for it individually.</li><li>Wound Type: Acute or Chronic</li><li>Wound Details</li><li>Wound Conditions</li><li>Surrounding Skin</li><li>Wound Picture (if available/applicable) — click "Upload New Photo" to add wound images to the file</li><li>Wound Size — Length / Width / Depth</li><li>Wound Treatment and Additional Comments</li></ul>
+<div class="alert info"><span>📝</span><div>Entering treatment here is for documentation purposes only — it does <strong>NOT</strong> generate a wound treatment care order. The wound care order must be created separately on the care plan. For additional wounds, click "+ Add New Wound Assessment" again.</div></div>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Cardiac <span class="req">★</span></div></div>
+<div class="sub-navy" style="margin-top:8px">NYHA Scale — For Patients with Congestive Heart Failure Only</div>
+<table class="dtable"><thead><tr><th>Class</th><th>Description</th></tr></thead><tbody><tr><td><strong>Class I</strong></td><td>No symptoms with ordinary physical activity</td></tr><tr><td><strong>Class II</strong></td><td>Symptoms with ordinary activity; slight limitation of physical activity</td></tr><tr><td><strong>Class III</strong></td><td>Symptoms with less than ordinary activity; marked limitation of activity</td></tr><tr><td><strong>Class IV</strong></td><td>Symptoms with any physical activity, or even at rest</td></tr></tbody></table>
+<div class="sub-navy" style="margin-top:8px">Cardiac Observations</div>
+<ul class="blist"><li>Is Normal → move on to the next section</li><li>Notable Concern → move to Cardiac-Related Findings → click "+ New Abnormal Cardiac Finding" → complete the section</li></ul>
+<div class="alert info"><span>📝</span><div>If a pacemaker or other cardiac device is present, ensure it is added to the problem list:<br>• Presence of Cardiac Pacemaker: Z95.0<br>• Implantable Cardioverter-Defibrillator: Z95.810<br>• Watchman Device: Z95.818</div></div>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Respiratory <span class="req">★</span></div></div>
+<ul class="blist"><li>Is Normal → move on to details supporting normal findings</li><li>Notable Concern → document notable concerns including:</li></ul>
+<ul class="blist" style="margin-left:24px">
+  <li>Coughing</li>
+  <li>Dyspnea</li>
+  <li>Click "+ Add New Respiratory Finding" to add additional findings:
+    <ul class="blist" style="margin-top:4px">
+      <li>Respiratory Effort</li>
+      <li>Respiratory Quality / Frequency</li>
+      <li>Respiratory Sounds</li>
+      <li>Location</li>
+      <li>Oxygenation / Secretions</li>
+    </ul>
+  </li>
+</ul>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row tip"><div>› Chest / Breast <span class="req">★</span><div class="obs-tip">Complete the applicable findings for this section.</div></div></div>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› GI / Abdomen <span class="req">★</span></div></div>
+<p style="font-size:.87rem;color:var(--text-mid);margin:6px 0">Complete the following assessments in this section:</p>
+<ul class="blist"><li>General Evaluation</li><li>Abdominal Assessment</li><li>Abdominal Sounds</li><li>Tenderness / Guarding</li><li>Bowel Habits — Performance: Normal, Constipation, Diarrhea</li><li>Bowel Habits — Last Bowel Movement</li><li>Other bowel-related observations or concerns: Free-text the patient's normal bowel movement frequency here, along with any routine bowel regimen being used.</li></ul>
+<div class="narr"><div class="narr-lbl">EXAMPLE</div><p>Patient typically has a formed bowel movement every 2–3 days. Uses Senna and/or Miralax as needed for occasional constipation with good effect.</p></div>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Nutrition <span class="req">★</span></div></div>
+<div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">Only answer items that reflect DECLINE in this section. If there is no decline in a given area, leave that option blank — do NOT select "No decrease" or "No weight loss."</div></div>
+<table class="dtable"><thead><tr><th>Question</th><th>How to Answer</th></tr></thead><tbody><tr><td><strong>Decrease in food intake over the past 3 months?</strong></td><td>Leave blank if no decrease. Select "Moderate or Severe" if applicable — do not select "No Decrease."</td></tr><tr><td><strong>Weight loss during the last 3 months?</strong></td><td>Leave blank if no weight loss. Select: Weight loss 2–7 lbs &nbsp;|&nbsp; Weight loss &gt; 7 lbs &nbsp;|&nbsp; Unknown weight loss (if reported but amount unknown — see note below).</td></tr><tr><td><strong>Patient's level of mobility?</strong></td><td>Goes out: Leaves home regularly &nbsp;|&nbsp; Limited – does not go out: Primarily stays home &nbsp;|&nbsp; Bed/Chair bound: Does not leave the home.</td></tr><tr><td><strong>Psychological stress or acute illness in the past 3 months?</strong></td><td>Yes/No. If yes, document <strong>WHAT</strong> happened in the narrative.</td></tr><tr><td><strong>Neuropsychological problems?</strong></td><td>No problems &nbsp;|&nbsp; Mild/Severe Dementia/Depression. If dementia or depression are present, these <strong>MUST</strong> be added to the problem list.</td></tr><tr><td><strong>Assessment method?</strong></td><td>BMI → move to BMI screening tool &nbsp;|&nbsp; Calf Circumference &nbsp;|&nbsp; MAC → ensure your selection matches the MAC measurement in Vital Signs.</td></tr></tbody></table>
+<div class="alert info"><span>📝</span><div>When documenting <strong>Unknown weight loss</strong>, ensure your narrative clearly describes the clinical indicators: e.g., "Decreased appetite with reduced portion intake, looser fitting clothing, visible muscle wasting, and caregiver report of ongoing weight loss."</div></div>
+<div class="alert tip"><span>💡</span><div>The answers in this section will generate a nutritional assessment score viewable in the Rapid Chart Narration. Review it to confirm it accurately reflects your clinical assessment. Edit and adjust using "Lock &amp; Edit RapidChart Contents" if needed.</div></div>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› GU / GYN <span class="req">★</span></div></div>
+<div class="sub-navy" style="margin-top:8px">History of UTIs</div>
+<ul class="blist"><li>UTIs, either active or historical, should be added to the problem list if applicable:<ul class="blist" style="margin-top:4px"><li>Urinary Tract Infection: N39.0</li><li>Personal History of Urinary Tract Infection: Z87.440</li></ul></li><li>Active UTIs require a QAPI event to be documented.</li></ul>
+<div class="sub-navy" style="margin-top:8px">Urine Output</div>
+<p style="font-size:.87rem;color:var(--text-mid);margin-bottom:8px">You may only choose one selection for each column. If the patient's urine is both cloudy and with sediment, document this in the narrative comments as both options cannot be selected simultaneously.</p>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Extremities <span class="req">★</span></div></div>
+<ul class="blist"><li>Appear Normal → Details for normal findings</li><li>Notable Findings → "+ New Extremity Finding" → Describe the finding</li><li>Peripheral Pulses Findings</li></ul>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row tip"><div>› Musculoskeletal Assessment <span class="req">★</span><div class="obs-tip">Complete the applicable assessment for musculoskeletal findings.</div></div></div>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Neuro <span class="req">★</span></div></div>
+<table class="dtable"><thead><tr><th>Field</th><th>What to Document</th></tr></thead><tbody><tr><td><strong>FAST Scale</strong></td><td><strong>ONLY document the FAST scale if the patient has Alzheimer's Disease specifically.</strong> Otherwise, use narrative documentation to describe the patient's functional state. FAST is Alzheimer's specific — do not use for other dementia types.</td></tr><tr><td><strong>Neurological Observations</strong></td><td>Findings in this assessment area need to support and reflect the patient's diagnosis if applicable. If the patient was unable to sign consents for themselves due to cognition, this section must support that finding.</td></tr><tr><td><strong>Facial Droop</strong></td><td>Document if present</td></tr><tr><td><strong>Strength</strong></td><td>Document findings</td></tr><tr><td><strong>Tremor</strong></td><td>Document if present</td></tr><tr><td><strong>Sensation</strong></td><td>Document findings</td></tr></tbody></table>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Psych / Social <span class="req">★</span></div></div>
+<div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">A Psychosocial assessment is required for ALL admissions. Mark "Yes." Only answer the sections you can appropriately answer. If truly unable to answer or assess, leave the selection blank.</div></div>
+<p style="font-size:.87rem;color:var(--text-mid);margin:6px 0">Complete the following assessment items:</p>
+<ul class="blist"><li>How is the patient adjusting to the terminal illness?</li><li>How is the patient's family adjusting to the terminal illness?</li><li>Are there any social or emotional factors related to the terminal illness?</li><li>Does the patient have any observed coping mechanisms?</li><li>Does the patient's family have any observed coping mechanisms?</li><li>Family dynamics and communication patterns</li><li>Financial concerns:<ul class="blist" style="margin-top:4px"><li>None Identified → move to next question</li><li>There are concerns → opens options for what financial concerns were discussed</li><li>Unable to assess → move to next question</li></ul></li><li>Is there a caregiver assisting with the patient?<ul class="blist" style="margin-top:4px"><li>There is NO caregiver → <strong>Notify Social Work as soon as possible</strong> to expedite their initial visit and assist with advanced care planning.</li><li>There IS a caregiver → opens additional options: caregiver's ability to function; obstacles or risk factors affecting care plan compliance</li></ul></li><li>What family support systems are in place to facilitate coping with end-of-life issues?</li></ul>
+<div class="sub-navy" style="margin-top:10px">Suicide Risk</div>
+<ul class="blist"><li>No risk identified</li><li>Risk has been identified → opens additional options. <strong>Must be care planned and the IDG must be notified immediately.</strong><ul class="blist" style="margin-top:4px"><li>Describe observed suicide risk in the detail field</li></ul></li></ul>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Spiritual <span class="req">★</span></div></div>
+<div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">A spiritual assessment is required for ALL admissions. Mark "Yes." You may mark "No" only if truly unable to assess, with clear documentation that an assessment was attempted and the reason it could not be completed. <strong>The reason cannot be that the Chaplain will provide assessment later.</strong></div></div>
+<p style="font-size:.87rem;color:var(--text-mid);margin:6px 0">If Yes, complete the following:</p>
+<ul class="blist"><li>What is the importance of spirituality for the patient?</li><li>Does the patient engage in religious practices?<ul class="blist" style="margin-top:4px"><li>No → move on</li><li>Yes → document current religious practices</li></ul></li><li>Does the patient use any spiritual coping mechanisms?<ul class="blist" style="margin-top:4px"><li>No → move on</li><li>Yes → document what spiritual coping mechanisms the patient uses</li></ul></li><li>What are the patient's current spiritual needs?</li><li>What are the patient's feelings about their terminal diagnosis?</li><li>What are the patient's End of Life wishes?</li><li>What afterlife beliefs does the patient have?</li></ul>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Patient Safety <span class="req">★</span></div></div>
+<p style="font-size:.87rem;color:var(--text-mid);margin:6px 0">Complete each safety screening category:</p>
+<table class="dtable"><thead><tr><th>Safety Category</th><th>If Concerns Are Identified</th></tr></thead><tbody><tr><td><strong>Emergency Safety Concerns</strong></td><td>Opens additional options: EMS access, fire concerns, flood potential. Document additional/other concerns in the narrative box along with details of identified concerns.</td></tr><tr><td><strong>Patient Safety Concerns</strong></td><td>Opens additional options: Physical, Entry/Exit, Trip/Fall. Provide details of safety concerns. <strong>Any identified safety concerns MUST be included in the care plan.</strong></td></tr><tr><td><strong>Patient Abuse Concerns</strong></td><td>Opens additional options: Physical, emotional, sexual, neglect, exploitation. Provide details related to these concerns. <strong>Any identified patient abuse concerns must be IMMEDIATELY reported to the Location Clinical Director and Medical Director.</strong></td></tr><tr><td><strong>General Well-Being Concerns</strong></td><td>Opens additional options: Room cleanliness, hygiene, pet issues. Note: The word "Abuse" appears in this question in the system in error — the generated narrative correctly states "concerns about the patient's wellbeing," not abuse.</td></tr></tbody></table>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Fall Risk <span class="req">★</span></div></div>
+<div class="sub-navy" style="margin-top:8px">Current Fall Risk Level</div>
+<ul class="blist"><li>Known High Risk / Known Moderate Risk / Known Low Risk — select supporting evidence for the identified risk level</li><li>"Assess Falls Risk" — selecting this option opens a fall risk assessment tool that will calculate a fall risk level for you</li></ul>
+<div class="alert info"><span>📝</span><div>Any identified fall risk must be included in the care plan. Common codes:<br>• History of falling: Z91.81 &nbsp;&nbsp;• Abnormalities of gait: R26.89 &nbsp;&nbsp;• Other specified risk factors: Z91.89<br>This may also be care planned under the primary diagnosis or other condition causing the elevated fall risk.</div></div>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Caregivers — Primary Caregiver Identification <span class="req">★</span></div></div>
+<p style="font-size:.87rem;color:var(--text-mid);margin:6px 0">Identify the patient's primary caregiver — the main person responsible for coordinating and ensuring care needs are met.</p>
+<div class="alert warning"><span>⚠</span><div><strong>Facility staff are NOT the primary caregiver.</strong> Do NOT select "paid help" for nursing home or ALF staff. For facility patients, the primary caregiver is usually a family member or responsible party. Select "No" only if truly no such person exists.</div></div>
+<table class="dtable"><thead><tr><th>Field</th><th>How to Complete</th></tr></thead><tbody><tr><td><strong>Does the patient have a primary caregiver?</strong></td><td>Select Yes if there is a consistent person overseeing care. Select No only if no such person exists.</td></tr><tr><td><strong>Primary Caregiver Relationship</strong></td><td>Select the relationship (spouse, child, etc.). Use "paid help" only if a privately hired individual is managing care.</td></tr><tr><td><strong>Primary Caregiver Assistance</strong></td><td>Select based on what they are personally responsible for: ADLs, medications, coordination, decision-making, etc.</td></tr><tr><td><strong>Primary Caregiver Frequency</strong></td><td>Select how often they are involved. For facility patients: base this on caregiver involvement (visits/calls), not staff care.</td></tr></tbody></table>
+<div class="alert tip"><span>💡</span><div>Ask yourself: "Who is the go-to person for decisions or concerns?" — that person is the primary caregiver.</div></div>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Explanation of Service <span class="req">★</span></div></div>
+<div class="sub-navy" style="margin-top:8px">Who Provided the Explanation of Services?</div>
+<ul class="blist"><li>"It was me" → opens the full section for documenting all required admission education items</li><li>"The Chaplain / Social Worker / Liaison" → bypasses that section. <strong>Do NOT choose this option unless you are certain that person has already completed and documented that this education was provided.</strong></li></ul>
+<p style="font-size:.87rem;color:var(--text-mid);margin:8px 0">Each of the following must be addressed as part of the admission process:</p>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin-bottom:10px">
+  <div style="background:var(--cell-bg,#f8f9fc);border:1px solid var(--border);padding:6px 10px;font-size:.85rem;border-radius:4px">☐ Hospice / Palliative Care</div>
+  <div style="background:var(--cell-bg,#f8f9fc);border:1px solid var(--border);padding:6px 10px;font-size:.85rem;border-radius:4px">☐ 24-Hour Support Phone</div>
+  <div style="background:var(--cell-bg,#f8f9fc);border:1px solid var(--border);padding:6px 10px;font-size:.85rem;border-radius:4px">☐ Orientation Book</div>
+  <div style="background:var(--cell-bg,#f8f9fc);border:1px solid var(--border);padding:6px 10px;font-size:.85rem;border-radius:4px">☐ Hospice Team Roles</div>
+  <div style="background:var(--cell-bg,#f8f9fc);border:1px solid var(--border);padding:6px 10px;font-size:.85rem;border-radius:4px">☐ Rights and Responsibilities</div>
+  <div style="background:var(--cell-bg,#f8f9fc);border:1px solid var(--border);padding:6px 10px;font-size:.85rem;border-radius:4px">☐ HIPAA Protection</div>
+  <div style="background:var(--cell-bg,#f8f9fc);border:1px solid var(--border);padding:6px 10px;font-size:.85rem;border-radius:4px">☐ Administrator's Contact Info</div>
+  <div style="background:var(--cell-bg,#f8f9fc);border:1px solid var(--border);padding:6px 10px;font-size:.85rem;border-radius:4px">☐ State Compliance Phone</div>
+  <div style="background:var(--cell-bg,#f8f9fc);border:1px solid var(--border);padding:6px 10px;font-size:.85rem;border-radius:4px">☐ Medical / Insurance Benefits</div>
+  <div style="background:var(--cell-bg,#f8f9fc);border:1px solid var(--border);padding:6px 10px;font-size:.85rem;border-radius:4px">☐ Advanced Directives</div>
+  <div style="background:var(--cell-bg,#f8f9fc);border:1px solid var(--border);padding:6px 10px;font-size:.85rem;border-radius:4px">☐ Veteran Services</div>
+  <div style="background:var(--cell-bg,#f8f9fc);border:1px solid var(--border);padding:6px 10px;font-size:.85rem;border-radius:4px">☐ Volunteer Availability &amp; Services</div>
+</div>
+<table class="dtable"><thead><tr><th>Documentation Item</th><th>Notes</th></tr></thead><tbody><tr><td><strong>Hospice consent signed and witnessed by</strong></td><td>Free text — specify who signed the consents. The patient must sign their own consents unless cognitively or physically impaired and unable to do so. They cannot request someone else sign simply because they prefer it.</td></tr><tr><td><strong>Legal documents discussed</strong></td><td>Mark any discussion items: Living Wills, Advanced Directives, DPOA, POA, Medical/Insurance Cards. If an Advanced Directive or POA is in place, a copy must be obtained for the chart.</td></tr><tr><td><strong>Volunteer services</strong></td><td>Document whether the patient wants volunteer services. Notify the volunteer coordinator either way so they can complete their portion of the care plan.</td></tr><tr><td><strong>Therapy services</strong></td><td>Only offer services available at your location. All additional services are subject to IDG review and approval of medical necessity.</td></tr><tr><td><strong>Facility or home coordination concerns</strong></td><td>Document any coordination concerns in the narrative box. If no concerns, move on.</td></tr><tr><td><strong>Special requests</strong></td><td>Document any special requests made by patient or caregiver.</td></tr></tbody></table>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row"><div>› Bereavement Assessment <span class="req">★</span></div></div>
+<div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">A bereavement assessment is required to be completed on EVERY admission by the admitting nurse. Mark "Performed" and complete the full assessment.</div></div>
+<p style="font-size:.87rem;color:var(--text-mid);margin:6px 0">Select "Pre-bereavement assessment" for admissions. If the person being assessed is not in the list, add them in Patient Info first.</p>
+<p style="font-size:.87rem;color:var(--text-mid);margin-bottom:6px">Complete each area of the assessment — select all that apply:</p>
+<ul class="blist"><li>Other Losses</li><li>Mental Health</li><li>Physical Health</li><li>Family System</li><li>Dependents in the home — click "+ Add New Dependent" for each dependent; add their specific age (Under 18 / Adult)</li><li>Socioeconomic Risks</li><li>Support Network</li><li>Caregiver's Coping</li></ul>
+<div class="sub-navy" style="margin-top:8px">General Bereavement Assessment — Assign Final Risk Level</div>
+<table class="dtable"><thead><tr><th>Risk Level</th><th>What It Means</th></tr></thead><tbody><tr><td><strong>Low Risk</strong></td><td>Minimal bereavement risk — default Low Risk follow-up tasks applied</td></tr><tr><td><strong>Moderate Risk</strong></td><td>Noticeable bereavement risk — default Moderate Risk follow-up tasks applied</td></tr><tr><td><strong>High Risk</strong></td><td>Significant bereavement risk — default High Risk follow-up tasks applied</td></tr></tbody></table>
+<div class="alert info"><span>📝</span><div>The assessment questions will generate a suggested bereavement score. Review that suggested score when answering the final question and assigning a risk level. Ensure this risk level <strong>MATCHES</strong> the bereavement risk level identified earlier in the Comprehensive Assessment section.</div></div>
+
+<div style="margin-top:4px"></div>
+<div class="obs-row tip"><div>› QAPI Events<div class="obs-tip">Document any QAPI events identified during the admission.</div></div></div>
+<ul class="blist"><li>No → move on to the Care Plan</li><li>Yes → click "+ Add QAPI Event" and select the event type:<ul class="blist" style="margin-top:4px"><li>Fall</li><li>Hospitalization</li><li>Infection</li><li>Complaint</li><li>Wound</li><li>EMS Incident</li><li>Medication Issue</li><li>Other</li></ul></li></ul>
+<p style="font-size:.87rem;color:var(--text-mid);margin:6px 0">Each event type opens its own specific reporting tool that must be completed. The following QAPI events must also be reflected in the patient's care plan:</p>
+<ul class="blist"><li>Falls → Fall Risk Care Plan</li><li>Wound → Specific Care Plan per wound (includes wound orders, supplies, and interventions)</li><li>Infections</li></ul>
+
+  </div></div>
+</div>
 <div class="card" id="w5">
   <div class="card-hdr" onclick="toggleCard('w5')">
     <div class="card-num">5</div>
-    <div class="card-bar"><h2>Care Plan</h2><div class="sub">Build the initial care plan</div><span class="chevron">▼</span></div>
+    <div class="card-bar"><h2>Care Plan</h2><div class="sub">Build the initial care plan for the patient</div><span class="chevron">▼</span></div>
   </div>
   <div class="card-body"><div class="card-inner">
-    <div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">Marking an intervention "Completed" is what populates Skilled Nursing Performed — the most common audit deficiency.</div></div>
-    <div class="sub-gold">Every Active Problem Must Include</div>
-    <table class="dtable">
-      <thead><tr><th>Requirement</th><th>Details</th></tr></thead>
-      <tbody>
-        <tr><td>At least 1 goal</td><td>Category · Focus · Measurable outcome · Duration (time-bound)</td></tr>
-        <tr><td>At least 3 interventions</td><td>Assess · Educate · Perform — one of each required</td></tr>
-        <tr><td>Interventions marked "Completed"</td><td>Scroll through every problem before submitting — this builds Skilled Nursing Performed</td></tr>
-      </tbody>
-    </table>
-    <div class="sub-gold">Grouping Diagnoses</div>
-    <p style="font-size:.87rem;color:var(--text-mid);margin-bottom:8px">Not every diagnosis needs its own care plan. Related problems may be grouped — e.g., Agitation (R45.1) and Anxiety (F41.9) can both be addressed under the Dementia (F02.81) care plan.</p>
-    <div class="alert warning"><span>⚠</span><div>Do NOT group all medications under one diagnosis. Each medication must link to its associated diagnosis on the problem list.</div></div>
+
+<div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">Marking an intervention "Completed" is what populates Skilled Nursing Performed — one of the most commonly cited audit deficiencies. Do NOT close the visit until every performed intervention is checked.</div></div>
+<p style="font-size:.88rem;color:var(--text-mid);margin:8px 0">The admitting nurse is responsible for building the initial care plan. At minimum, the care plan must address:</p>
+<ul class="blist"><li>The Primary Hospice Diagnosis</li><li>Any comorbid conditions the patient has that are being monitored, managed, or reported on by the hospice</li><li>Any active symptoms being treated, educated on, or affecting comfort and function</li><li>Any QAPI-related events such as falls, infections, wounds, etc.</li></ul>
+<div class="sub-gold" style="margin-top:12px">Care Plan Diagnosis / Problem List</div>
+<ul class="blist"><li>All diagnoses — related AND unrelated — must be added to the active problem list. These do NOT all require full care plans built out, but they must be listed.</li><li>Unrelated diagnoses must be marked "Not Related" if they are truly not related to the overall prognosis and decline of the patient's condition.</li><li>Medications (scheduled and PRN) may be linked to a problem without requiring a separate goal per medication.</li></ul>
+<div class="sub-gold" style="margin-top:12px">Every "Active" Problem Must Include</div>
+<div class="sub-navy" style="margin-top:6px">At Least One Goal</div>
+<table class="dtable"><thead><tr><th>Goal Element</th><th>What to Include</th></tr></thead><tbody><tr><td><strong>Category</strong></td><td>Physical, Psychosocial, Spiritual, etc.</td></tr><tr><td><strong>Focus</strong></td><td>Pain control, skin integrity, symptom management, etc.</td></tr><tr><td><strong>Measurement</strong></td><td>Specific and observable — e.g., "patient reports pain ≤ 3/10"</td></tr><tr><td><strong>Duration</strong></td><td>Time-bound — e.g., "within 30 days" or "ongoing through episode of care"</td></tr></tbody></table>
+<div class="sub-navy" style="margin-top:10px">At Least 3 Interventions Per Problem</div>
+<ul class="blist"><li>Assess — RN will assess [symptom/condition] at each visit</li><li>Educate — RN will educate patient/caregiver on [topic]</li><li>Perform — RN will perform [specific skilled task or procedure]</li></ul>
+<div class="sub-gold" style="margin-top:12px">Grouping Diagnoses Under One Problem</div>
+<p style="font-size:.88rem;color:var(--text-mid);margin-bottom:8px">Not every diagnosis needs its own separate intervention set if it is clinically related to an existing problem.</p>
+<div class="narr"><div class="narr-lbl">EXAMPLE</div><p>Dementia with behavioral disturbance (F02.81) can serve as the primary problem. Agitation (R45.1) and Anxiety (F41.9) can be grouped under the dementia problem — each will have their own entry due to coding requirements, but one set of goals and interventions may address all three.</p></div>
+<div class="sub-gold" style="margin-top:12px">The Aide Care Plan</div>
+<p style="font-size:.87rem;color:var(--text-mid);margin-bottom:8px">CNA care plans must be completed or verified at admission, regardless of whether a CNA visit has occurred yet.</p>
+<div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>CNA care plan completed at admission if patient has elected to have an aide</strong><span class="note">The aide may not visit until the care plan is completed and verified</span></div></div>
+<div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>Frequency verified based on the day of the week the patient admitted</strong><span class="note">Adjust to reflect realistic scheduling</span></div></div>
+<div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>Frequency of completing each intervention updated to match the agreed visit schedule</strong></div></div>
+<div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>Document how the patient transfers</strong><span class="note">e.g., stand-by assist, 1-person assist, mechanical lift, bed-bound/no transfer</span></div></div>
+<div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>No interventions requiring intake/output documentation</strong><span class="note">Unless specifically ordered by the physician</span></div></div>
+<div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>Nothing ordered as PRN and no frequency ranges are allowed</strong></div></div>
+
   </div></div>
 </div>
-
-<!-- Step 6 -->
 <div class="card" id="w6">
   <div class="card-hdr" onclick="toggleCard('w6')">
     <div class="card-num">6</div>
-    <div class="card-bar"><h2>Narrative</h2><div class="sub">Clinical story + depression screening</div><span class="chevron">▼</span></div>
+    <div class="card-bar"><h2>Nursing Narrative</h2><div class="sub">Document the patient's full clinical story</div><span class="chevron">▼</span></div>
   </div>
   <div class="card-body"><div class="card-inner">
-    <div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">Depression Screening must be documented in the nursing narrative — Firenote has no dedicated field. It must be entered manually on every admission.</div></div>
-    <div class="sub-gold">Required Elements</div>
-    <div class="two-col">
-      <div class="col">
-        <div class="chk-item"><div class="chk-text">Primary diagnosis and terminal prognosis rationale</div></div>
-        <div class="chk-item"><div class="chk-text">Related diagnoses and contribution to decline</div></div>
-        <div class="chk-item"><div class="chk-text">Non-related conditions noted</div></div>
-        <div class="chk-item"><div class="chk-text">Evidence of decline — objective data</div></div>
-      </div>
-      <div class="col">
-        <div class="chk-item"><div class="chk-text">Active symptoms and management</div></div>
-        <div class="chk-item"><div class="chk-text">Functional status — PPS, ECOG, ADL dependence</div></div>
-        <div class="chk-item"><div class="chk-text">Recent changes from prior baseline</div></div>
-        <div class="chk-item"><div class="chk-text">Outcome of MD call — physician name and time</div></div>
-      </div>
-    </div>
-    <div class="sub-gold" style="margin-top:12px">Copilot Prompt</div>
-    <div class="narr"><div class="narr-lbl">Copy and paste into Microsoft Copilot</div><p>Using the information below, generate a hospice admission nursing narrative. Include: primary diagnosis, related and non-related conditions, evidence of decline (functional, nutritional, cognitive), objective data (PPS, weight/MAC, intake, ADLs), symptom burden, current functional status, and any recent changes or hospitalizations. Write in a clear, clinical narrative style that supports hospice eligibility and can be used by a physician for attestation. Do not include any patient identifiers.</p></div>
+
+<div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">Depression Screening must be documented manually in the nursing narrative — Firenote has no dedicated field. It must be entered manually on every admission.</div></div>
+<p style="font-size:.88rem;color:var(--text-mid);margin:8px 0">Document a clear, detailed admission narrative describing the patient's current condition and overall decline. This is used by the physician to support the Attestation statement.</p>
+<div class="sub-gold">Required Narrative Elements</div>
+<ul class="blist"><li>Primary diagnosis and related conditions</li><li>Secondary non-related conditions (comorbidities impacting overall status)</li><li>Evidence of decline (functional, nutritional, cognitive)</li><li>Objective data (PPS, weight/MAC changes, intake, ADLs)</li><li>Symptom burden (pain, dyspnea, anxiety, etc.)</li><li>Current functional status and level of dependence</li><li>Any recent changes, hospitalizations, or infections</li><li>Overall clinical picture supporting hospice eligibility</li></ul>
+<div class="alert tip"><span>💡</span><div>This narrative should tell the full story of the patient — both what is driving hospice eligibility and what contributes to their overall condition.</div></div>
+<div class="sub-gold" style="margin-top:12px">Using AI (Microsoft Copilot) to Build Your Nursing Narrative</div>
+<ul class="blist"><li>Copy your full assessment narrative from the "Review and Finish" section</li><li>Paste it into Copilot and use the prompt below</li><li>Review and edit as needed to ensure accuracy</li></ul>
+<div class="alert warning"><span>⚠</span><div><strong>Do NOT include any patient identifying information</strong> (name, DOB, address, etc.)<br>Ensure all diagnoses are added to the care plan list first so they pull into your assessment.<br>If diagnoses are missing, you will need to manually include them in the narrative.</div></div>
+<div class="narr"><div class="narr-lbl">COPILOT PROMPT — Copy and Use</div><p>Using the information below, generate a hospice admission nursing narrative.<br><br>Include: primary diagnosis, related and non-related conditions, evidence of decline (functional, nutritional, cognitive), objective data (PPS, weight/MAC, intake, ADLs), symptom burden, current functional status, and any recent changes or hospitalizations.<br><br>Write in a clear, clinical narrative style that supports hospice eligibility and can be used by a physician for attestation. Do not include any patient identifiers.</p></div>
+
   </div></div>
 </div>
-
-<!-- Step 7 -->
 <div class="card" id="w7">
   <div class="card-hdr" onclick="toggleCard('w7')">
     <div class="card-num">7</div>
-    <div class="card-bar"><h2>Care Coordination</h2><div class="sub">IDG statement — required every admission</div><span class="chevron">▼</span></div>
+    <div class="card-bar"><h2>Coordination of Care</h2><div class="sub">IDG coordination statement — required every admission</div><span class="chevron">▼</span></div>
   </div>
   <div class="card-body"><div class="card-inner">
-    <div class="narr"><div class="narr-lbl">Required IDG Coordination Statement</div><p>"Coordinated with [Patient], [Family/Caregiver], [Facility Staff if applicable], and IDG members including [Hospice Physician, MD], [SW], [Chaplain], [Aide], [Volunteer Coordinator]. All parties are in agreement with hospice admission and the initial plan of care."</p></div>
-    <div class="alert warning"><span>⚠</span><div><strong>AUDIT RISK</strong> — Missing IDG coordination statement = plan of care not considered an interdisciplinary product.</div></div>
+
+<p style="font-size:.88rem;color:var(--text-mid);margin-bottom:10px">Document coordination of care at admission to reflect that all appropriate parties have been involved and are in agreement with the hospice plan of care.</p>
+<div class="narr"><div class="narr-lbl">REQUIRED COORDINATION STATEMENT — Add to Your Admission Note</div><p>"Coordinated with patient, family members, facility staff, IDG members, and hospice/attending physician. All parties are in agreement with hospice admission and the initial plan of care."</p></div>
+<div class="alert warning"><span>⚠</span><div><strong>Ensure all applicable parties are included:</strong> patient, family, facility, IDG, physician<br>Update with specific roles or names when appropriate.<br>Add via Addendum if missing after note completion.</div></div>
+
   </div></div>
 </div>
-
-<!-- Step 8 -->
 <div class="card" id="w8">
   <div class="card-hdr" onclick="toggleCard('w8')">
     <div class="card-num">8</div>
-    <div class="card-bar"><h2>HOPE Assessment</h2><div class="sub">Must match care plan, narrative, and medications</div><span class="chevron">▼</span></div>
+    <div class="card-bar"><h2>HOPE Assessment</h2><div class="sub">Key compliance points and common mistakes</div><span class="chevron">▼</span></div>
   </div>
   <div class="card-body"><div class="card-inner">
-    <div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">If you check it in HOPE, it needs to be documented and addressed elsewhere. HOPE must match the care plan, narrative, and medication list.</div></div>
-    <table class="dtable">
-      <thead><tr><th>Section</th><th>What to Document</th></tr></thead>
-      <tbody>
-        <tr><td>Section A</td><td>Interpreter · Living arrangements · Availability of assistance</td></tr>
-        <tr><td>Section F</td><td>Whether DISCUSSIONS occurred (not what was decided) — CPR, other treatments, hospitalization, spiritual. Always enter the date.</td></tr>
-        <tr><td>Section I</td><td>Must align with the care plan diagnosis list. Use "Other Medical Condition" when needed.</td></tr>
-        <tr><td>Section J — Pain</td><td>Screening required. Pain present → care plan required.</td></tr>
-        <tr><td>Section J — SOB</td><td>Screening required. Consistent with narrative and care plan.</td></tr>
-        <tr><td>Section J — Death Imminent</td><td>Select "Yes" only if actively dying at time of assessment</td></tr>
-        <tr><td>Section M — Skin</td><td>All active skin conditions. Care plan must reflect.</td></tr>
-        <tr><td>Section N — Medications</td><td>Opioid use + bowel regimen. Bowel regimen REQUIRED if opioids ordered unless contraindicated.</td></tr>
-      </tbody>
-    </table>
+
+<div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">If you check it in HOPE, it needs to be documented and addressed elsewhere. HOPE responses must match the nursing narrative, care plan, and medication profile.</div></div>
+<div class="sub-gold">General Rules</div>
+<ul class="blist"><li>Answer every question based on what is known at the time of admission</li><li>If a discussion was attempted but declined → select the appropriate "refused" option</li><li>Ensure dates are entered when required</li><li>If a question does not apply or is negative → answer "No" (do not leave blank unless instructed)</li><li>Use comments sections to clarify anything unclear or clinically significant</li></ul>
+<table class="dtable"><thead><tr><th>HOPE Section</th><th>What to Document</th></tr></thead><tbody><tr><td><strong>Section A – Administrative</strong><br><small>(Interpreter, Living Arrangements, Availability of Assistance)</small></td><td>A1110B Interpreter: Select "Yes" if patient needs or requests interpreter services<br>A1905 Living Arrangements: Reflect where the patient resides (home, facility, etc.)<br>A1910 Availability of Assistance: Indicate if support is available</td></tr><tr><td><strong>Section F – Preferences</strong><br><small>(CPR, Other Treatments, Hospitalization, Spiritual)</small></td><td>These questions are about whether DISCUSSIONS occurred — not what the decision was. Select "Yes, discussion occurred" or "Refused" if declined. Always enter the date of discussion.</td></tr><tr><td><strong>Section I – Active Diagnoses</strong></td><td>Must align with the care plan diagnosis list. Select "Yes" for all applicable conditions. Use "Other Medical Condition" when needed. Add comments if clarification is needed.</td></tr><tr><td><strong>Section J – Pain</strong></td><td>Pain screening is required. If pain is present: complete comprehensive pain assessment. If pain is identified → it should be addressed in the care plan.</td></tr><tr><td><strong>Section J – Shortness of Breath</strong></td><td>Screening is required. If present: indicate symptoms and document treatment initiation (or if declined). Ensure consistency with narrative and care plan.</td></tr><tr><td><strong>Section J – Death is Imminent</strong></td><td>Select "Yes" only if the patient is actively dying at time of assessment.</td></tr><tr><td><strong>Section M – Skin Conditions</strong></td><td>Identify any skin issues present. Select all applicable conditions. Ensure assessment is documented, treatments/interventions are selected, and care plan reflects skin concerns.</td></tr><tr><td><strong>Section N – Medications</strong></td><td>Document opioid use (scheduled and/or PRN) and bowel regimen. A bowel regimen is <strong>REQUIRED</strong> if opioids are used unless contraindicated. If no bowel regimen: document why not.</td></tr></tbody></table>
+<div class="sub-gold" style="margin-top:12px">Common Mistakes to Avoid</div>
+<ul class="blist"><li>Marking symptoms (pain, SOB) without documenting assessment or interventions</li><li>Missing required dates in Section F</li><li>Selecting diagnoses in Section I that are not listed in the chart</li><li>Not initiating a bowel regimen when opioids are ordered</li><li>Inconsistency between HOPE, nursing narrative, and care plan</li></ul>
+
   </div></div>
 </div>
-
-<!-- Step 9 -->
 <div class="card" id="w9">
   <div class="card-hdr" onclick="toggleCard('w9')">
     <div class="card-num">9</div>
-    <div class="card-bar"><h2>Review &amp; Finish</h2><div class="sub">Final check before signing</div><span class="chevron">▼</span></div>
+    <div class="card-bar"><h2>Review & Finish</h2><div class="sub">Final check before signing</div><span class="chevron">▼</span></div>
   </div>
   <div class="card-body"><div class="card-inner">
-    <div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">Once signed the assessment CANNOT be reopened or edited. Use "Lock &amp; Edit RapidChart Content" before signing if corrections are needed.</div></div>
-    <div class="sub-gold">Final Verification</div>
-    <div class="chk-item crit"><div class="chk-box"></div><div class="chk-text"><strong>Every performed care plan intervention is marked "Completed"</strong><span class="note">This builds Skilled Nursing Performed — empty = visit has no documented clinical value</span></div><span class="tag req">REQ</span></div>
-    <div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>Narrative tells the full story and supports eligibility</strong></div></div>
-    <div class="chk-item crit"><div class="chk-box"></div><div class="chk-text"><strong>Depression screening documented in nursing narrative</strong></div><span class="tag req">REQ</span></div>
-    <div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>All orders entered and accurate</strong><span class="note">Admission · Diet · Medications · O2 · Wound care · Catheter</span></div></div>
-    <div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>Diagnosis list complete — Related/Unrelated on every problem</strong></div></div>
-    <div class="chk-item crit"><div class="chk-box"></div><div class="chk-text"><strong>Verbal Certification entered, dated, and signed</strong><span class="note">Within 48 hours of admission</span></div><span class="tag req">REQ</span></div>
-    <div class="chk-item crit"><div class="chk-box"></div><div class="chk-text"><strong>QAPI events entered for wounds or infections on admission</strong></div><span class="tag req">REQ</span></div>
-    <div class="chk-item crit"><div class="chk-box"></div><div class="chk-text"><strong>IDG coordination statement in Care Coordination section</strong></div><span class="tag req">REQ</span></div>
-    <div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>HOPE consistent with care plan, narrative, and medications</strong></div></div>
-    <div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>RapidChart narration reviewed and edited for accuracy</strong></div></div>
-    <div class="alert tip" style="margin-top:12px"><span>💡</span><div><strong>Final Rule:</strong> Assessment = Care Plan = Narrative = HOPE. If it's documented, it must match everywhere.</div></div>
+
+<div class="exclaim"><div class="exclaim-icon">!</div><div class="exclaim-body">Once the assessment is signed, it CANNOT be reopened or edited. If you have questions or need help, contact your Supervisor or Quality Assurance team BEFORE signing.</div></div>
+<div class="sub-gold">Editing RapidChart Content</div>
+<p style="font-size:.88rem;color:var(--text-mid);margin:6px 0">The "Rapid Chart" documentation is auto-generated based on your assessment responses and can be edited for accuracy before signing.</p>
+<ul class="blist"><li>Click "Lock &amp; Edit RapidChart Content" within each section</li><li>Review and update as needed to ensure the documentation accurately reflects the patient's condition</li></ul>
+<div class="sub-gold" style="margin-top:12px">Final Verification — Do Not Submit Until All Are Complete</div>
+<div class="chk-item crit"><div class="chk-box"></div><div class="chk-text"><strong>Scroll through every care plan problem — confirm each performed intervention is marked "Completed"</strong><span class="note">This populates Skilled Nursing Performed. An empty or incomplete SNP section = the visit has no documented clinical value.</span></div><span class="tag req">REQ</span></div>
+<div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>Nursing narrative tells the full clinical story and clearly supports hospice eligibility</strong></div></div>
+<div class="chk-item crit"><div class="chk-box"></div><div class="chk-text"><strong>Depression screening documented in the nursing narrative</strong><span class="note">Firenote has no dedicated field — must be entered manually</span></div><span class="tag req">REQ</span></div>
+<div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>All orders entered and accurate</strong><span class="note">Admission · Diet · Medications · O2 · Wound care · Catheter</span></div></div>
+<div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>Diagnosis list complete — every problem classified as Related or Non-Related</strong></div></div>
+<div class="chk-item crit"><div class="chk-box"></div><div class="chk-text"><strong>Verbal Certification entered, dated, and signed</strong><span class="note">Must be obtained within 48 hours of admission</span></div><span class="tag req">REQ</span></div>
+<div class="chk-item crit"><div class="chk-box"></div><div class="chk-text"><strong>QAPI events entered for wounds or infections present on admission</strong></div><span class="tag req">REQ</span></div>
+<div class="chk-item crit"><div class="chk-box"></div><div class="chk-text"><strong>IDG coordination statement documented in Care Coordination section</strong></div><span class="tag req">REQ</span></div>
+<div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>HOPE assessment completed and consistent with care plan, narrative, and medications</strong></div></div>
+<div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>Bereavement risk score matches score in the Bereavement Assessment section</strong></div></div>
+<div class="chk-item"><div class="chk-box"></div><div class="chk-text"><strong>RapidChart narration reviewed and edited for accuracy where needed</strong></div></div>
+<div class="alert tip"><span>💡</span><div>Simple rule: Review → Fix → Ask questions → Then sign.</div></div>
+
   </div></div>
 </div>
 
