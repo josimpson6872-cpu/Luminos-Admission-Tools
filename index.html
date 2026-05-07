@@ -711,7 +711,99 @@ header{background:var(--navy);position:sticky;top:0;z-index:200;box-shadow:0 4px
 <ul class="blist"></ul>
 <div class="alert tip"><span>💡</span><div>This narrative should tell the full story of the patient — both what is driving hospice eligibility and what contributes to their overall condition.</div></div>
 <div class="sub-gold" style="margin-top:14px">Depression Screening — Required in Every Admission Narrative</div>
-<p style="font-size:.88rem;color:var(--text-mid);margin-bottom:8px">Firenote has no dedicated depression screening field. A depression screening <strong>must</strong> be manually documented in the nursing narrative on every admission — regardless of whether the result is positive or negative. Use the appropriate template below:</p>
+<p style="font-size:.88rem;color:var(--text-mid);margin-bottom:12px">Firenote has no dedicated depression screening field. A depression screening <strong>must</strong> be manually documented in the nursing narrative on every admission — regardless of whether the result is positive or negative. Use the visual guide below to conduct the screening, then use the appropriate documentation template.</p>
+
+<!-- Visual screening guide -->
+<div style="border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-bottom:12px">
+
+  <!-- Header -->
+  <div style="background:var(--navy);color:#fff;padding:10px 14px;font-size:.85rem;font-weight:700;letter-spacing:.04em">DEPRESSION SCREENING — BEDSIDE GUIDE</div>
+
+  <!-- Step 1: Determine approach -->
+  <div style="background:var(--gold-pale);border-bottom:1px solid var(--border);padding:10px 14px">
+    <div style="font-size:.78rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px">Step 1 — Determine the Approach</div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <div style="flex:1;min-width:200px;background:#fff;border:1.5px solid var(--green);border-radius:6px;padding:8px 11px">
+        <div style="font-size:.8rem;font-weight:700;color:var(--green);margin-bottom:3px">✓ Patient CAN participate</div>
+        <div style="font-size:.82rem;color:var(--text-mid)">Alert, oriented, and able to understand and respond to direct questions — even if minimally</div>
+      </div>
+      <div style="flex:1;min-width:200px;background:#fff;border:1.5px solid var(--gold);border-radius:6px;padding:8px 11px">
+        <div style="font-size:.8rem;font-weight:700;color:var(--gold);margin-bottom:3px">⚠ Patient CANNOT participate</div>
+        <div style="font-size:.82rem;color:var(--text-mid)">Unresponsive, severely cognitively impaired, aphasic, or otherwise unable to meaningfully engage</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Path A -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border)">
+    <div style="padding:12px 14px;border-right:1px solid var(--border)">
+      <div style="font-size:.78rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px">Path A — Patient Can Participate</div>
+
+      <div style="font-size:.8rem;font-weight:700;color:var(--navy);margin-bottom:5px">Ask these two questions verbally:</div>
+
+      <div style="background:var(--blue-bg);border-left:3px solid var(--blue);border-radius:0 4px 4px 0;padding:8px 11px;margin-bottom:6px;font-size:.85rem;color:#1a3a6b;font-style:italic">
+        "Over the past two weeks, have you felt down, depressed, or hopeless?"
+      </div>
+      <div style="background:var(--blue-bg);border-left:3px solid var(--blue);border-radius:0 4px 4px 0;padding:8px 11px;margin-bottom:10px;font-size:.85rem;color:#1a3a6b;font-style:italic">
+        "Over the past two weeks, have you had little interest or pleasure in doing things you normally enjoy?"
+      </div>
+
+      <div style="font-size:.8rem;font-weight:700;color:var(--navy);margin-bottom:5px">Then observe and note:</div>
+      <ul style="margin:0 0 0 14px;padding:0;font-size:.82rem;color:var(--text-mid);line-height:1.6">
+        <li>Affect during the interview — flat, tearful, anxious, appropriate?</li>
+        <li>Body language — withdrawn, avoidant, engaged?</li>
+        <li>Consistency between verbal response and observed affect</li>
+      </ul>
+
+      <div style="margin-top:10px;font-size:.8rem;font-weight:700;color:var(--navy);margin-bottom:5px">Interpret the response:</div>
+      <div style="display:flex;gap:5px">
+        <div style="flex:1;background:var(--green-bg);border:1px solid var(--green);border-radius:5px;padding:7px 9px;font-size:.79rem;color:var(--green)">
+          <strong>Negative screen</strong><br>Patient denies both, affect is appropriate → document and move on
+        </div>
+        <div style="flex:1;background:var(--red-bg);border:1px solid var(--red);border-radius:5px;padding:7px 9px;font-size:.79rem;color:var(--red)">
+          <strong>Positive screen</strong><br>Patient endorses either question, or observed affect is inconsistent with denial → describe symptoms, notify care team, reflect in care plan
+        </div>
+      </div>
+    </div>
+
+    <!-- Path B -->
+    <div style="padding:12px 14px">
+      <div style="font-size:.78rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px">Path B — Patient Cannot Participate</div>
+
+      <div style="font-size:.8rem;font-weight:700;color:var(--navy);margin-bottom:5px">Observe for non-verbal indicators:</div>
+      <ul style="margin:0 0 10px 14px;padding:0;font-size:.82rem;color:var(--text-mid);line-height:1.7">
+        <li>Facial expression — flat, sad, or tearful affect</li>
+        <li>Withdrawal from interaction or lack of response to familiar people</li>
+        <li>Restlessness, agitation, or inconsolable distress</li>
+        <li>Changes in appetite, sleep pattern, or activity level (caregiver-reported)</li>
+        <li>Moaning, crying, or vocalizations suggesting distress</li>
+      </ul>
+
+      <div style="font-size:.8rem;font-weight:700;color:var(--navy);margin-bottom:5px">Ask the caregiver or family:</div>
+      <ul style="margin:0 0 10px 14px;padding:0;font-size:.82rem;color:var(--text-mid);line-height:1.7">
+        <li>Has the patient seemed sad, withdrawn, or different recently?</li>
+        <li>Any known history of depression or mental health treatment?</li>
+        <li>Any recent changes in behavior that concern you?</li>
+      </ul>
+
+      <div style="display:flex;gap:5px">
+        <div style="flex:1;background:var(--green-bg);border:1px solid var(--green);border-radius:5px;padding:7px 9px;font-size:.79rem;color:var(--green)">
+          <strong>No indicators noted</strong><br>Document observations and caregiver report → no further action required at this time
+        </div>
+        <div style="flex:1;background:var(--red-bg);border:1px solid var(--red);border-radius:5px;padding:7px 9px;font-size:.79rem;color:var(--red)">
+          <strong>Indicators present</strong><br>Document findings, notify care team, reflect in care plan — reassess at next visit
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer reminder -->
+  <div style="background:var(--amber-bg);border-top:1px solid var(--border);padding:9px 14px;font-size:.82rem;color:#7a4200">
+    <strong>⚠ Remember:</strong> The screening must be documented on <strong>every</strong> admission — a negative screen still needs to be documented. "No depression screening documented" = compliance gap.
+  </div>
+</div>
+
+<p style="font-size:.85rem;font-weight:700;color:var(--navy);margin-bottom:8px">Documentation Templates — Copy and Complete in Your Narrative:</p>
 <div class="narr" style="margin-bottom:8px">
 <div class="narr-lbl">OPTION A — Patient able to participate</div>
 <p>Depression Assessment: Patient was screened for depression at time of admission. Patient was asked about mood, feelings of sadness or hopelessness, and loss of interest in activities. Patient denied feelings of depression or hopelessness at this time. No observable signs of depression noted during assessment. [OR: Patient endorsed [describe symptoms]. These findings were discussed with the care team and will be reflected in the plan of care as appropriate.]</p>
